@@ -229,6 +229,49 @@ input, select, textarea {
 		width: 1200px;
 	}
 
+	.habilidades-container {
+		background-color: #0a0214; /* Fondo oscuro */
+		color: #ffffff; /* Texto en blanco */
+		padding: 30px;
+		border-radius: 10px;
+		text-align: center;
+	}
+	
+	.habilidades-container h3 {
+		color: #ffffff;
+		font-size: 28px;
+		font-weight: bold;
+	}
+	
+	.habilidades-container p {
+		font-size: 16px;
+		line-height: 1.5;
+		margin-bottom: 20px;
+	}
+	
+	.habilidades-grid {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 10px;
+		margin-top: 20px;
+	}
+	
+	.habilidades-grid span {
+		font-size: 14px;
+		font-weight: bold;
+		background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+		padding: 8px 16px;
+		border-radius: 6px;
+		color: #000000; /* Color de texto más llamativo */
+		transition: 0.3s;
+	}
+	
+	.habilidades-grid span:hover {
+		background-color: rgba(255, 255, 255, 0.3);
+	}
+	
+
 		.container.medium {
 			width: 900px;
 		}
@@ -1626,6 +1669,15 @@ input, select, textarea {
 		display: inline-block;
 		position: relative;
 	}
+	.image.featured img {
+		width: 100%;
+		transition: transform 0.3s ease-in-out;
+	  }
+	  
+	  .image.featured:active img {
+		transform: scale(1.2); /* Aumenta un 20% */
+	  }
+	  
 
 		.image img {
 			display: block;
@@ -1636,6 +1688,16 @@ input, select, textarea {
 			display: block;
 			width: 100%;
 		}
+
+		#Conocimientos .image.fit img {
+			width: 100px;  /* Ajusta el tamaño según prefieras */
+			height: 100px; /* Mantiene el tamaño uniforme */
+			border-radius: 10px; /* Bordes ligeramente redondeados (puedes poner 0 si las quieres totalmente cuadradas) */
+			object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
+			display: block;
+			margin: 0 auto; /* Centra la imagen */
+		}
+		
 
 		.image.featured {
 			display: block;
